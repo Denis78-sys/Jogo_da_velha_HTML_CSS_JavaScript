@@ -44,6 +44,12 @@ main{
     text-shadow: 1px 1px 0px black;
     display: inline;
 }
+#jogoutra{
+    background-color: brown;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
 .jogadas{
     font-family: Arial, Helvetica, sans-serif;
     color: brown;

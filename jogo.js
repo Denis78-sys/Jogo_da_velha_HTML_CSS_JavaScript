@@ -7,10 +7,12 @@ let j2 = window.document.getElementById('j2')
 
 let nJogadas = window.document.getElementById('nJogadas')
 
-let tabela = window.document.getElementById('tabela')
+//let tabela = window.document.getElementById('tabela')
 
 let plac1 = window.document.getElementById('plac1')
 let plac2 = window.document.getElementById('plac2')
+
+let vezjog = window.document.getElementById('vezjogador')
 
 //Linha 1
 let n7 = window.document.getElementById('n7')
@@ -44,6 +46,10 @@ function jogadores() {
     j2.innerHTML += ` ${nome2.toUpperCase()}`
 
     nJogadas.innerHTML = `${jogadas}`
+    if (vez == 1) {
+        vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+        vezjog.style.color = 'red'
+    }
 }
 
 //Linha 1
@@ -65,6 +71,8 @@ function jog7() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -79,6 +87,8 @@ function jog7() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -103,6 +113,8 @@ function jog8() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -118,6 +130,8 @@ function jog8() {
 
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -142,6 +156,8 @@ function jog9() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -156,6 +172,8 @@ function jog9() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -182,6 +200,8 @@ function jog4() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -196,6 +216,8 @@ function jog4() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -220,6 +242,8 @@ function jog5() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -235,6 +259,8 @@ function jog5() {
 
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -259,6 +285,8 @@ function jog6() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -273,6 +301,8 @@ function jog6() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -299,6 +329,8 @@ function jog1() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -313,6 +345,8 @@ function jog1() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -337,6 +371,8 @@ function jog2() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -352,6 +388,8 @@ function jog2() {
 
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -376,6 +414,8 @@ function jog3() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome2.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'blue'
             } else {
                 alert('Jogada inválida')
             }
@@ -390,6 +430,8 @@ function jog3() {
                 jogadas++
                 nJogadas.innerHTML = `${jogadas}`
                 quemGanha()
+                vezjog.innerHTML = `${nome1.toUpperCase()}, sua vez de jogar`
+                vezjog.style.color = 'red'
             } else {
                 alert('Jogada inválida')
             }
@@ -402,7 +444,7 @@ function jog3() {
 
 function quemGanha() {
 
-    tabela.innerHTML = tab
+    //tabela.innerHTML = tab
 
     if (tab[0][0] == 1 && tab[0][1] == 1 && tab[0][2] == 1) {
         //horizontal
@@ -505,14 +547,14 @@ function quemGanha() {
         ponto2++
         vencedor = 2
         plac2.innerHTML = ` ${ponto2}`
-    } else if (tab[0][2] == 1 && tab[1][1] == 1 && tab[2][0]) {
+    } else if (tab[0][2] == 1 && tab[1][1] == 1 && tab[2][0] == 1) {
         nJogadas.innerHTML = `${nome1.toUpperCase()} venceu!!!`
         nJogadas.style.color = 'red'
         jogadas = 9
         ponto1++
         vencedor = 1
         plac1.innerHTML = ` ${ponto1}`
-    } else if (tab[0][2] == 1 && tab[1][1] == 1 && tab[2][0]) {
+    } else if (tab[0][2] == 2 && tab[1][1] == 2 && tab[2][0] == 2) {
         nJogadas.innerHTML = `${nome2.toUpperCase()} venceu!!!`
         nJogadas.style.color = 'blue'
         jogadas = 9
@@ -522,7 +564,7 @@ function quemGanha() {
     } else if (jogadas == fim && vencedor == 0) {
         nJogadas.innerHTML = `Empate!!!`
         nJogadas.style.color = 'orange'
-        
+
     }
 
 
@@ -530,7 +572,7 @@ function quemGanha() {
 }
 
 
-function zerar() { 
+function zerar() {
     zerarDisp()
     jogadas = 0
     vencedor = 0
@@ -548,11 +590,11 @@ function zerar() {
         vez = 2
     }
 
-    
+
 }
 
 function zerarDisp() {
-    
+
     n7.innerHTML = '7'
     n7.style.color = 'black'
     n8.innerHTML = '8'
@@ -573,5 +615,5 @@ function zerarDisp() {
     n2.style.color = 'black'
     n3.innerHTML = '3'
     n3.style.color = 'black'
-    
+
 }
