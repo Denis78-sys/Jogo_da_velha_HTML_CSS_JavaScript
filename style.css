@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #39660B;
+    --cor2: #A5EA60;
+    --cor4: #7FE619;
+    --cor5: #48662A;
+    --cor6: #63B314;
+}
+
+body{
+    background-color: var(--cor6);
+    text-align: center;   
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+   
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+main{
+    text-align: center;
+    width: 350px;
+    margin: auto;
+}
+#nomes{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.397);
+    padding: 3px;
+    margin-bottom: 5px;
+   
+}
+#jogo{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    margin-top: 5px;
+}
+.jogadores{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-shadow: 1px 1px 0px black;
+    display: inline;
+}
+.jogadas{
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    text-shadow: 1px 1px 0px black;
+}
+#j1{
+    color: red;
+}
+#j2{
+    color: blue;
+}
+#quadro{
+    background-color: white;
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.397);
+}
+#linha01{
+    display: inline-flex;
+}
+#linha02{
+    display: inline-flex;
+}
+#linha03{
+    display: inline-flex;
+}
+.botoes{
+    background-color: var(--cor2);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+#plac1{
+    color: red;
+    
+}
+#plac2{
+    color: blue;
+    
+}
+#rodape{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-size: 0.5em;
+}

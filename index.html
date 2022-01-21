@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body onload="jogadores()">
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+        <div id="nomes">
+            <p class="jogadores" id="j1">Jogador 1: <p id="plac1"></p> </p>
+            <p class="jogadores" id="j2">Jogador 2: <p id="plac2"></p></p>
+            <div><input type="button" value="Jogar outra vez" onclick="zerar()"></div>
+        </div>
+        
+        <section id="quadro">
+
+            <article id="linha01">
+                <div class="botoes" onclick="jog7()" id="n7">
+                    <p>7</p>
+                </div>
+                <div class="botoes" onclick="jog8()" id="n8">
+                    <p>8</p>
+                </div>
+                <div class="botoes" onclick="jog9()" id="n9">
+                    <p>9</p>
+                </div>
+            </article>
+            <article id="linha02">
+                <div class="botoes" onclick="jog4()" id="n4">
+                    <p>4</p>
+                </div>
+                <div class="botoes" onclick="jog5()" id="n5">
+                    <p>5</p>
+                </div>
+                <div class="botoes" onclick="jog6()" id="n6">
+                    <p>6</p>
+                </div>
+            </article>
+            <article id="linha03">
+                <div class="botoes" onclick="jog1()" id="n1">
+                    <p>1</p>
+                </div>
+                <div class="botoes" onclick="jog2()" id="n2">
+                    <p>2</p>
+                </div>
+                <div class="botoes" onclick="jog3()" id="n3">
+                    <p>3</p>
+                </div>
+            </article>
+            
+        </section>
+        <div id="jogo">
+            <p class="jogadas" id="vez"></p>
+            <p class="jogadas">Número de jogadas:<p class="jogadores" id="nJogadas"></p></p>
+        </div>
+
+       
+    </main>
+   <div id="tabela">Tabela</div>
+    <footer>
+        <p id="rodape">Desenvolvido por Denis Marques</p>
+    </footer>
+    <script src="jogo.js"></script>
+</body>
+
+</html>
